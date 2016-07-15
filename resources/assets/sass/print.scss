@@ -1,0 +1,113 @@
+$fontColor: #333333;
+$lightFontColor: #9c9e9f;
+$borderColor: #f2f2f2;
+$headRowColor: #bedbc5;
+$oddRowColor: #f2f2f2;
+$lineHeight: 1em;
+$logoWidth: auto;
+$leftMargin: 15mm;
+
+.floatl {
+  float: left;
+}
+
+.floatr {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-small {
+  font-size: 8pt;
+}
+
+.min-width {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.light-text {
+  color: $lightFontColor;
+  font-size: 6pt;
+}
+
+.divider {
+  border-top: 1px solid $borderColor;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+th {
+  background-color: $headRowColor;
+}
+
+tr.odd {
+  background-color: $oddRowColor;
+}
+
+body {
+  color: $fontColor;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  font-weight: normal;
+  line-height: $lineHeight;
+  margin-left: $leftMargin;
+  padding-top: 35mm;
+  padding-bottom: 35mm;
+}
+
+.pad-top {
+  padding-top: 2em;
+}
+
+.row {
+  clear: both;
+}
+
+#logo {
+  width: $logoWidth;
+}
+
+table#invoice-entries {
+  border-collapse: collapse;
+  font-size: 8pt;
+  width: 100%;
+}
+
+table#invoice-entries th,
+table#invoice-entries td {
+  border-left: 1px solid #fff;
+  padding: .2em .5em .5em;
+}
+
+table#invoice-entries th {
+  padding-top: .5em;
+}
+
+#footer table.address {
+  width: 100%;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: $leftMargin;
+}
+
+#footer {
+  position: fixed;
+  bottom: 30mm;
+  left: $leftMargin;
+}

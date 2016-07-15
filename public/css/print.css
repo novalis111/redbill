@@ -1,0 +1,84 @@
+.floatl {
+  float: left; }
+
+.floatr {
+  float: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-small {
+  font-size: 8pt; }
+
+.min-width {
+  width: 1%;
+  white-space: nowrap; }
+
+.light-text {
+  color: #9c9e9f;
+  font-size: 6pt; }
+
+.divider {
+  border-top: 1px solid #f2f2f2; }
+
+.width-50 {
+  width: 50%; }
+
+th {
+  background-color: #bedbc5; }
+
+tr.odd {
+  background-color: #f2f2f2; }
+
+body {
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  font-weight: normal;
+  line-height: 1em;
+  margin-left: 15mm;
+  padding-top: 35mm;
+  padding-bottom: 35mm; }
+
+.pad-top {
+  padding-top: 2em; }
+
+.row {
+  clear: both; }
+
+#logo {
+  width: auto; }
+
+table#invoice-entries {
+  border-collapse: collapse;
+  font-size: 8pt;
+  width: 100%; }
+
+table#invoice-entries th,
+table#invoice-entries td {
+  border-left: 1px solid #fff;
+  padding: .2em .5em .5em; }
+
+table#invoice-entries th {
+  padding-top: .5em; }
+
+#footer table.address {
+  width: 100%; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 15mm; }
+
+#footer {
+  position: fixed;
+  bottom: 30mm;
+  left: 15mm; }
+
+/*# sourceMappingURL=print.css.map */

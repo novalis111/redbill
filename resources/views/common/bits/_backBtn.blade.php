@@ -1,0 +1,1 @@
+<a href="{{ url()->previous() }}" class="btn btn-primary">@lang('redbill.back')</a>

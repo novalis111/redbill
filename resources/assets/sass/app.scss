@@ -1,0 +1,41 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* http://www.colourlovers.com/palette/254301/[Chic]_-_Mellow */
+
+.rb-red {
+  color: #F24E4E;
+}
+
+.rb-yellow {
+  color: #F2C94E;
+}
+
+.rb-green {
+  color: #11644D;
+}
+
+.rb-lgrey {
+  color: #999999;
+}
+
+* .glyphicon {
+  cursor: default;
+}
+
+* a .glyphicon {
+  cursor: pointer;
+}
+
+.input-amount {
+  text-align: center;
+  width: 4em;
+}
+
+.table-borderless td,
+.table-borderless th {
+  border: none !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
