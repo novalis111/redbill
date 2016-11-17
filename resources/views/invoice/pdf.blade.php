@@ -2,7 +2,7 @@
 
 @section('content')
     <div id="header">
-        <img id="logo" src="{{URL::asset('/img/logo.png')}}" alt="Logo"/>
+         <img id="logo" src="{{URL::asset('/img/logo.png')}}" alt="Logo"/>
 
         <div class="divider" style="margin-top: .5em"></div>
     </div>
