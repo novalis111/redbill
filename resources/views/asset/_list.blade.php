@@ -10,7 +10,11 @@
                     {{ $assets->first()->client->company_name . ' - ' . trans_choice("redbill.x_assets", count($assets)) }}
                 </div>
                 <div class="col-md-3 text-right">
-                    {{ formatCurrency($assets->sum('amount') * $assets->first()->client->getHourlyRate()) }}
+                    {{ trans('redbill.net_sum') }}
+                    &nbsp;{{ formatCurrency($assets->sum('amount') * $assets->first()->client->getHourlyRate()) }}
+                    &nbsp;/&nbsp;
+                    {{ trans('redbill.profit_sum') }}
+                    &nbsp;{{ formatCurrency($assets->sum('amount') * $assets->first()->client->getHourlyRate() / (1 + (float)config('redbill.income_tax_rate') / 100)) }}
                 </div>
             </div>
 
