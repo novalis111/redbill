@@ -23,11 +23,11 @@ class RedmineInterface extends AssetInterface
             n.name, n.id,
             COUNT(*)-1 AS level
             FROM projects AS n, projects AS p
-            WHERE `status` = 1
-            AND `description` NOT LIKE '%#nobill#%'
+            WHERE n.status = 1
+            AND n.description NOT LIKE '%#nobill#%'
             AND n.lft BETWEEN p.lft AND p.rgt
             GROUP BY n.lft
-            ORDER BY n.lft
+            ORDER BY n.lft, n.name
             "
         )->get();
         foreach ($rows as $row) {
