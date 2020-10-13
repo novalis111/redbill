@@ -8,32 +8,32 @@ use Redbill\AssetInterfaces\AssetInterface;
 /**
  * Redbill\Asset
  *
- * @property integer $id
+ * @property int $id
  * @property string $interface_token
- * @property integer $foreign_id
- * @property integer $client_id
+ * @property int $foreign_id
+ * @property int $client_id
  * @property string $type
  * @property string $title
  * @property float $amount
  * @property string $unit
  * @property string $delivery_date
  * @property string $comment
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
  * @property-read \Redbill\Company $client
  * @property-read \Illuminate\Database\Eloquent\Collection|\Redbill\InvoiceEntry[] $invoiceEntries
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereInterfaceToken($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereForeignId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereClientId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereType($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereTitle($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereAmount($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereUnit($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereDeliveryDate($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereComment($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Asset whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereAmount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereClientId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereComment($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereDeliveryDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereForeignId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereInterfaceToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereType($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereUnit($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Asset whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Asset extends Model

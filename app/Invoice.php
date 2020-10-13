@@ -8,9 +8,9 @@ use Mockery\CountValidator\Exception;
 /**
  * Redbill\Invoice
  *
- * @property integer $id
- * @property integer $owner_id
- * @property integer $client_id
+ * @property int $id
+ * @property int $owner_id
+ * @property int $client_id
  * @property string $number
  * @property string $title
  * @property string $status
@@ -18,23 +18,23 @@ use Mockery\CountValidator\Exception;
  * @property string $date_delivered
  * @property string $date_billed
  * @property string $date_payed
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
- * @property-read \Redbill\Company $owner
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
  * @property-read \Redbill\Company $client
  * @property-read \Illuminate\Database\Eloquent\Collection|\Redbill\InvoiceEntry[] $entries
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereOwnerId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereClientId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereNumber($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereTitle($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereStatus($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereDateOrdered($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereDateDelivered($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereDateBilled($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereDatePayed($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Invoice whereUpdatedAt($value)
+ * @property-read \Redbill\Company $owner
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereClientId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereDateBilled($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereDateDelivered($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereDateOrdered($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereDatePayed($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereOwnerId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Invoice whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Invoice extends Model

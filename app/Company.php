@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Redbill\Company
  *
- * @property integer $id
+ * @property int $id
  * @property string $company_name
  * @property string $salutation
  * @property string $name
@@ -26,31 +26,31 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $bic
  * @property string $bank_name
  * @property float $hourly_rate
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection|\Redbill\Invoice[] $asOwnerInvoices
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Redbill\Invoice[] $asClientInvoices
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereCompanyName($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereSalutation($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereName($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereStreet($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereStreetNumber($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company wherePostcode($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereCity($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereCountry($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereTelephone($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereMobile($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereFax($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereEmail($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereWebsite($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereTaxNumber($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereIban($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereBic($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereBankName($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereHourlyRate($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\Company whereUpdatedAt($value)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Redbill\Invoice[] $asOwnerInvoices
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereBankName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereBic($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereCity($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereCompanyName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereCountry($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereFax($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereHourlyRate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereIban($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereMobile($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company wherePostcode($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereSalutation($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereStreet($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereStreetNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereTaxNumber($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereTelephone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\Company whereWebsite($value)
  * @mixin \Eloquent
  */
 class Company extends Model

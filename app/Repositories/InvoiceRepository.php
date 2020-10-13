@@ -49,7 +49,7 @@ class InvoiceRepository
      */
     public function getPayedYears()
     {
-        return Invoice::select(['date_payed'])->where('date_payed', '!=', '0')->orderBy('date_payed', 'desc')->get();
+        return Invoice::select(['date_payed'])->whereNotNull('date_payed')->orderBy('date_payed', 'desc')->get();
     }
 
     protected function _filterSpan(Builder $builder, $type = false)

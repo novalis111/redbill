@@ -7,19 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Redbill\ProjectToClient
  *
- * @property integer $id
+ * @property int $id
  * @property string $interface_token
- * @property integer $project_id
- * @property integer $client_id
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
+ * @property int $project_id
+ * @property int $client_id
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
  * @property-read \Redbill\Company $client
- * @method static \Illuminate\Database\Query\Builder|\Redbill\ProjectToClient whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\ProjectToClient whereInterfaceToken($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\ProjectToClient whereProjectId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\ProjectToClient whereClientId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\ProjectToClient whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\ProjectToClient whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\ProjectToClient whereClientId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\ProjectToClient whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\ProjectToClient whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\ProjectToClient whereInterfaceToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\ProjectToClient whereProjectId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\ProjectToClient whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class ProjectToClient extends Model

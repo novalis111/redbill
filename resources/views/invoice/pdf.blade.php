@@ -2,9 +2,8 @@
 
 @section('content')
     <div id="header">
-         <img id="logo" src="{{URL::asset('/img/logo.png')}}" alt="Logo"/>
-
-        <div class="divider" style="margin-top: .5em"></div>
+         <img id="logo" src="{{ URL::asset('img/logo.png') }}" alt="Logo"/>
+         <div class="divider" style="margin-top: .5em"></div>
     </div>
 
     <div id="footer" class="text-small divider">

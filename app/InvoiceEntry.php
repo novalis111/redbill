@@ -7,26 +7,26 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Redbill\InvoiceEntry
  *
- * @property integer $id
- * @property integer $invoice_id
- * @property integer $asset_id
+ * @property int $id
+ * @property int $invoice_id
+ * @property int $asset_id
  * @property string $title
  * @property float $amount
  * @property float $price
  * @property float $tax_rate
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
- * @property-read \Redbill\Invoice $invoice
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
  * @property-read \Redbill\Asset $asset
- * @method static \Illuminate\Database\Query\Builder|\Redbill\InvoiceEntry whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\InvoiceEntry whereInvoiceId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\InvoiceEntry whereAssetId($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\InvoiceEntry whereTitle($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\InvoiceEntry whereAmount($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\InvoiceEntry wherePrice($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\InvoiceEntry whereTaxRate($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\InvoiceEntry whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\Redbill\InvoiceEntry whereUpdatedAt($value)
+ * @property-read \Redbill\Invoice $invoice
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\InvoiceEntry whereAmount($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\InvoiceEntry whereAssetId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\InvoiceEntry whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\InvoiceEntry whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\InvoiceEntry whereInvoiceId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\InvoiceEntry wherePrice($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\InvoiceEntry whereTaxRate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\InvoiceEntry whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\Redbill\InvoiceEntry whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class InvoiceEntry extends Model
